@@ -7,7 +7,7 @@ const browse = async (req, res, next) => {
     // Fetch all videos from the database
     const videos = await tables.video.readAll();
     // Respond with the videos in JSON format
-    res.json(videos);
+    res.status(200).json(videos);
   } catch (err) {
     // Pass any errors to the error-handling middleware
     next(err);
