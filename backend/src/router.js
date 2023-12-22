@@ -18,6 +18,13 @@ router.get("/items/:id", itemControllers.read);
 // Route to add a new item
 router.post("/items", itemControllers.add);
 
+const videoControllers = require("./controllers/videoControllers");
+
+// Route to get a list of items
+router.get("/videos", videoControllers.browse);
+
+router.get("/videos/:id", videoControllers.read);
+
 /* ************************************************************************* */
 
 module.exports = router;
