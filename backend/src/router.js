@@ -23,6 +23,8 @@ const videoControllers = require("./controllers/videoControllers");
 // Route to get a list of items
 router.get("/videos", videoControllers.browse);
 
+router.get("/videos/:id", videoControllers.read);
+
 /* ************************************************************************* */
 
 module.exports = router;

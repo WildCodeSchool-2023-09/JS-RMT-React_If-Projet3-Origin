@@ -25,7 +25,7 @@ class VideoManager extends AbstractManager {
   async read(id) {
     // Execute the SQL SELECT query to retrieve a specific video by its ID
     const [rows] = await this.database.query(
-      `select * from ${this.table} where id = ?`,
+      `select video.id, video.title, video.category_id, video.sport_id from ${this.table} inner join category on category_id = ${this.table}.category_id where ${this.table}.id = ?`,
       [id]
     );
 

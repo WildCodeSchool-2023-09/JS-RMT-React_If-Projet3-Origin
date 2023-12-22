@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Video from "./pages/Video";
+import VideoAcceuil from "./components/VideoAcceuil";
 
 import "./App.css";
 
@@ -10,7 +10,7 @@ function App() {
       <h1>liste des vidéos</h1>
       <main>
         {videos.map((video) => (
-          <Video video={video} />
+          <VideoAcceuil video={video} />
         ))}
       </main>
     </div>

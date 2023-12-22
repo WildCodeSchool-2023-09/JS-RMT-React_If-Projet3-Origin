@@ -18,14 +18,14 @@ const browse = async (req, res, next) => {
 const read = async (req, res, next) => {
   try {
     // Fetch a specific video from the database based on the provided ID
-    const video = await tables.videos.read(req.params.id);
+    const video = await tables.video.read(req.params.id);
 
     // If the video is not found, respond with HTTP 404 (Not Found)
     // Otherwise, respond with the video in JSON format
     if (video == null) {
       res.sendStatus(404);
     } else {
-      res.json(video);
+      res.status(200).json(video);
     }
   } catch (err) {
     // Pass any errors to the error-handling middleware
