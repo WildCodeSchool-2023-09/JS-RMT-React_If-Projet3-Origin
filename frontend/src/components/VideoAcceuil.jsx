@@ -11,8 +11,6 @@ function VideoAcceuil({ video }) {
   );
 }
 
-export default VideoAcceuil;
-
 VideoAcceuil.propTypes = {
   video: PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -20,3 +18,5 @@ VideoAcceuil.propTypes = {
     year: PropTypes.number.isRequired,
   }).isRequired,
 };
+
+export default VideoAcceuil;

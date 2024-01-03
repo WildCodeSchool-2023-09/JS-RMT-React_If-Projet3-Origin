@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+  color: black;
+}
+
+input {
+  margin-top: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.h1 {
+  justify-content: center;
+}
