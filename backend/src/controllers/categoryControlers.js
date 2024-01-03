@@ -4,11 +4,10 @@ const tables = require("../tables");
 // The B of BREAD - Browse (Read All) operation
 const browse = async (req, res, next) => {
   try {
-    // Fetch all sports from the database
-    const sports = await tables.sport.readAll();
-
-    // Respond with the sports in JSON format
-    res.json(sports);
+    // Fetch all categorys from the database
+    const categorys = await tables.category.readAll();
+    // Respond with the categorys in JSON format
+    res.status(200).json(categorys);
   } catch (err) {
     // Pass any errors to the error-handling middleware
     next(err);
@@ -18,15 +17,15 @@ const browse = async (req, res, next) => {
 // The R of BREAD - Read operation
 const read = async (req, res, next) => {
   try {
-    // Fetch a specific sport from the database based on the provided ID
-    const sport = await tables.sport.read(req.params.id);
+    // Fetch a specific video from the database based on the provided ID
+    const category = await tables.category.read(req.params.id);
 
-    // If the sport is not found, respond with HTTP 404 (Not Found)
-    // Otherwise, respond with the sport in JSON format
-    if (sport == null) {
+    // If the category is not found, respond with HTTP 404 (Not Found)
+    // Otherwise, respond with the category in JSON format
+    if (category == null) {
       res.sendStatus(404);
     } else {
-      res.json(sport);
+      res.status(200).json(category);
     }
   } catch (err) {
     // Pass any errors to the error-handling middleware
@@ -39,14 +38,14 @@ const read = async (req, res, next) => {
 
 // The A of BREAD - Add (Create) operation
 const add = async (req, res, next) => {
-  // Extract the sport data from the request body
-  const sport = req.body;
+  // Extract the category data from the request body
+  const category = req.body;
 
   try {
-    // Insert the sport into the database
-    const insertId = await tables.sport.create(sport);
+    // Insert the category into the database
+    const insertId = await tables.category.create(category);
 
-    // Respond with HTTP 201 (Created) and the ID of the newly inserted sport
+    // Respond with HTTP 201 (Created) and the ID of the newly inserted category
     res.status(201).json({ insertId });
   } catch (err) {
     // Pass any errors to the error-handling middleware
