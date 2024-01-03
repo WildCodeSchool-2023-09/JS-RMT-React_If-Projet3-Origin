@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import connexion from "../../services/connexion";
-import "./AdminVideo.css";
 
 const videoType = {
   title: "",
