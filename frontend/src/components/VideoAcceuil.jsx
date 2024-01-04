@@ -5,13 +5,11 @@ function VideoAcceuil({ video }) {
   return (
     <>
       <h2>{video.title}</h2>
-      <h3>{video.description}</h3>
-      <h3>{video.year}</h3>
+      <h3>video</h3>
+      <h3>video</h3>
     </>
   );
 }
-
-export default VideoAcceuil;
 
 VideoAcceuil.propTypes = {
   video: PropTypes.shape({
@@ -20,3 +18,5 @@ VideoAcceuil.propTypes = {
     year: PropTypes.number.isRequired,
   }).isRequired,
 };
+
+export default VideoAcceuil;
