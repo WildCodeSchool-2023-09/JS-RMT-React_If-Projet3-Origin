@@ -1,6 +1,5 @@
 import { useLoaderData } from "react-router-dom";
 import VideoAcceuil from "./components/VideoAcceuil";
-import Slider from "./components/Slider";
 
 import "./App.css";
 
@@ -9,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <h1>ORIGIN'S DIGITAL</h1>
-      <Slider />
       <main>
         {videos.map((video) => (
           <VideoAcceuil video={video} />
