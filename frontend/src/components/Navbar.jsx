@@ -14,20 +14,20 @@ function Navbar() {
   return (
     <div>
       <nav className={isActive ? "active nav" : "nav"}>
-        <h3>origin</h3>
+        <h3 className="title">origins</h3>
         <ul>
           <li>
-            <a href="/" onClick={handleLinkClick}>
+            <a className="nav" href="/" onClick={handleLinkClick}>
               Home
             </a>
           </li>
           <li>
-            <a href="/" onClick={handleLinkClick}>
+            <a className="nav" href="/" onClick={handleLinkClick}>
               Video Acceuil
             </a>
           </li>
           <li>
-            <a href="/" onClick={handleLinkClick}>
+            <a className="nav" href="/" onClick={handleLinkClick}>
               Contact
             </a>
           </li>
