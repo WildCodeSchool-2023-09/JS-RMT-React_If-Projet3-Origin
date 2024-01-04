@@ -35,10 +35,11 @@ function AdminVideo() {
   return (
     <div>
       <h1>Interface d'administration d'un dépôt pour une Video</h1>
-      <form onSubmit={postVideo}>
+      <form className="pageadm" onSubmit={postVideo}>
         <label>
           title
           <input
+            className="imputadm"
             type="text"
             name="title"
             required
@@ -49,6 +50,7 @@ function AdminVideo() {
         <label>
           description
           <input
+            className="imputadm"
             type="texterea"
             name="description"
             required
@@ -59,6 +61,7 @@ function AdminVideo() {
         <label>
           year
           <input
+            className="imputadm"
             type="number"
             name="year"
             required
@@ -69,6 +72,7 @@ function AdminVideo() {
         <label>
           url
           <input
+            className="imputadm"
             type="url"
             name="url"
             required
@@ -77,13 +81,13 @@ function AdminVideo() {
           />
         </label>
         <label>
-          category_id
+          category
           <select name="category_id" onChange={handleVideo} required>
             <option value={null}>veuillez choisir</option>
           </select>
         </label>
         <label>
-          sport_id
+          sport
           <select name="sport_id" onChange={handleVideo} required>
             <option value={null}>veuillez choisir</option>
           </select>

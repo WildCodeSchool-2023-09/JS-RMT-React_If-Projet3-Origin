@@ -8,8 +8,7 @@ function App() {
   const videos = useLoaderData();
   return (
     <div className="App">
-      <h1>ORIGINS</h1>
-      <h2>DIGITAL</h2>
+      <h1>ORIGIN'S DIGITAL</h1>
       <Slider />
       <main>
         {videos.map((video) => (
