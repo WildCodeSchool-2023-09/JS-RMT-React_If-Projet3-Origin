@@ -9,6 +9,7 @@ import VideoUnit from "./components/VideoUnit";
 import UserAdmin from "./components/administration/UserAdmin";
 import AdminVideo from "./components/administration/AdminVideo";
 import DashBoard from "./components/administration/DashBoard";
+import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         .get(`${import.meta.env.VITE_BACKEND_URL}/api/videos/${params.id}`)
         .then((res) => res.data);
     },
+  },
+  {
+    path: "/navbar",
+    element: <Navbar />,
   },
   {
     path: "/administration/",
