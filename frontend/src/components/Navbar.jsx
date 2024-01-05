@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -17,25 +18,27 @@ function Navbar() {
         <h3 className="title">origins</h3>
         <ul>
           <li>
-            <a className="nav" href="/" onClick={handleLinkClick}>
+            <Link className="nav" to="/" onClick={handleLinkClick}>
               Home
-            </a>
-          </li>
-          <li>
-            <a className="nav" href="/" onClick={handleLinkClick}>
-              Video
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a className="nav" href="/" onClick={handleLinkClick}>
-              Contact
-            </a>
+            <Link className="nav" to="/" onClick={handleLinkClick}>
+              Video
+            </Link>
           </li>
+
           <li>
-            <a className="nav" href="/" onClick={handleLinkClick}>
+            <Link className="nav" to="/" onClick={handleLinkClick}>
+              Contact
+            </Link>
+          </li>
+
+          <li>
+            <Link className="nav" to="/" onClick={handleLinkClick}>
               Se connecter
-            </a>
+            </Link>
           </li>
         </ul>
         <button
