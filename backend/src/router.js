@@ -25,6 +25,12 @@ router.get("/videos", videoControllers.browse);
 
 router.get("/videos/:id", videoControllers.read);
 
+router.post("/videos", videoControllers.add);
+
+const categoryControllers = require("./controllers/categoryControlers");
+
+router.get("/sports", categoryControllers.browse);
+
 /* ************************************************************************* */
 
 module.exports = router;
