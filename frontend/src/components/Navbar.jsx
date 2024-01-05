@@ -23,12 +23,18 @@ function Navbar() {
           </li>
           <li>
             <a className="nav" href="/" onClick={handleLinkClick}>
-              Video Acceuil
+              Video
+            </a>
+          </li>
+
+          <li>
+            <a className="nav" href="/" onClick={handleLinkClick}>
+              Contact
             </a>
           </li>
           <li>
             <a className="nav" href="/" onClick={handleLinkClick}>
-              Contact
+              Se connecter
             </a>
           </li>
         </ul>
