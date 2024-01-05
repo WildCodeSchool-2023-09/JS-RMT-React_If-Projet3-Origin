@@ -8,35 +8,31 @@ function Navbar() {
     setIsActive(!isActive);
   };
 
-  const handleLinkClick = () => {
-    setIsActive(false);
-  };
-
   return (
     <div>
       <nav className={isActive ? "active nav" : "nav"}>
         <h3 className="title">origins</h3>
         <ul>
           <li>
-            <Link className="nav" to="/" onClick={handleLinkClick}>
+            <Link onClick={handleIconClick} className="nav" to="/">
               Home
             </Link>
           </li>
 
           <li>
-            <Link className="nav" to="/" onClick={handleLinkClick}>
+            <Link onClick={handleIconClick} className="nav" to="/videos">
               Video
             </Link>
           </li>
 
           <li>
-            <Link className="nav" to="/" onClick={handleLinkClick}>
+            <Link onClick={handleIconClick} className="nav" to="/contact">
               Contact
             </Link>
           </li>
 
           <li>
-            <Link className="nav" to="/" onClick={handleLinkClick}>
+            <Link onClick={handleIconClick} className="nav" to="/connection">
               Se connecter
             </Link>
           </li>
