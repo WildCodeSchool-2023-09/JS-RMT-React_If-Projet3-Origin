@@ -1,12 +1,22 @@
+.imagevideo {
+  height: 95vh;
+  width: 100%;
+  background-image: url("../../assets/dossimg.png/134502.png");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  color: blanchedalmond;
+}
+
 .pagevideo {
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .pageadm {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.9rem;
+  padding-top: 5%;
   margin: 0.5rem;
   border: 3px solid rgb(248, 107, 0);
 }
