@@ -1,0 +1,11 @@
+/*Liste des videos dans videoAcceuil*/
+.containt {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  border: 3px solid rgb(248, 107, 0);
+  border-radius: 0.5rem;
+}

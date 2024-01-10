@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import VideoAcceuil from "./components/VideoAcceuil";
+import PageVideo from "./pages/admin/VideoAcceuil";
 
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -9,10 +9,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>liste des vidéos</h1>
-      <main>
+      <main className="containerV">
         {videos.map((video) => (
-          <VideoAcceuil video={video} />
+          <PageVideo video={video} />
         ))}
       </main>
     </div>
