@@ -32,7 +32,7 @@ function Navbar() {
           </li>
 
           <li>
-            <Link onClick={handleIconClick} className="nav" to="/connection">
+            <Link onClick={handleIconClick} className="nav" to="/connexion">
               Se connecter
             </Link>
           </li>
