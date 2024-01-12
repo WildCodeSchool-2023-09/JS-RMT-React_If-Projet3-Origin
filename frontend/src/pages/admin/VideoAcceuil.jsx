@@ -1,7 +1,7 @@
 import React from "react";
 
 function VideoAcceuil() {
-  return <div> </div>;
+  return <div>Bonjour</div>;
 }
 
 export default VideoAcceuil;
