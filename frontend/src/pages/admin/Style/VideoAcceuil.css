@@ -1,11 +1,8 @@
-/*Liste des videos dans videoAcceuil*/
-.containt {
-  font-family: "Times New Roman", Times, serif;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0.5rem;
-  margin: 1.5rem;
-  border: 3px solid rgb(248, 107, 0);
-  border-radius: 0.5rem;
+.page_acceuil {
+  height: 95vh;
+  width: 100%;
+  background-image: url(../../assets/dossimg.png/Origins.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  color: white;
 }

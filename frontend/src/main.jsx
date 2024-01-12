@@ -7,7 +7,7 @@ import connexion from "./services/connexion";
 import Administration from "./components/administration/Administration";
 import AdminVideo from "./components/administration/AdminVideo";
 import PageVideo from "./pages/admin/PageVideo";
-import Contact from "./pages/admin/Contact";
+import AdminContact from "./components/administration/AdminContact";
 
 import DashBoard from "./pages/admin/DashBoard";
 
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Contact",
-    element: <Contact />,
+    element: <AdminContact />,
   },
   {
     path: "/Connexion",

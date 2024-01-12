@@ -57,11 +57,11 @@ function AdminVideo() {
     }
   };
   return (
-    <div>
+    <div className="imagevideo">
       <h1>Interface d'administration d'un dépôt pour une Video</h1>
-      <main className="pagevideo">
-        <form className="pageadm" onSubmit={postVideo}>
-          <label>
+      <main className="imagevideo">
+        <form onSubmit={postVideo}>
+          <label className="pageadm">
             title
             <input
               className="imputadm"
@@ -138,7 +138,7 @@ function AdminVideo() {
             </select>
           </label>
           <button className="ajoutvideo" type="submit">
-            Ajouter une video
+            Ajouter
           </button>
           {message && <p className="message">{message}</p>}
         </form>
