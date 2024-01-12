@@ -20,7 +20,7 @@ function InscriptOrigins() {
                 <label htmlFor="adresse mail"> Adresse mail</label>
                 <input type="adresse mail" className="" />
                 <form className=" confirmation mail">
-                  <label htmlFor="confirmation mail"> Confirmation mail</label>
+                  <label htmlFor="confirmation mail"> Confirmation Mail</label>
                   <input type="confirmation mail" className="" />
                   <button type="button">Save</button>
                 </form>
