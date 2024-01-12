@@ -7,26 +7,34 @@ function InscriptOrigins() {
     <div>
       <h1> InscriptOrigins </h1>
       <main>
-        <form className="nom">
-          <label htmlFor="nom">Nom</label>
-          <input type="nom" className="" />
-          <form className="prenom">
-            <label htmlFor="prenom">Prenom</label>
-            <input type="prenom" className="" />
-            <form className="pseudo">
-              <label htmlFor="Pseudo"> Pseudo</label>
-              <input type="pseudo" className="" />
-              <form className="adresse mail">
-                <label htmlFor="adresse mail"> Adresse mail</label>
-                <input type="adresse mail" className="" />
-                <form className=" confirmation mail">
-                  <label htmlFor="confirmation mail"> Confirmation Mail</label>
-                  <input type="confirmation mail" className="" />
-                  <button type="button">Save</button>
-                </form>
-              </form>
-            </form>
-          </form>
+        <form>
+          <label>
+            Nom
+            <input type="text" name="text" required />
+          </label>
+          <label>
+            prénom
+            <input type="text" name="text" required />
+          </label>
+          <label>
+            Mail
+            <input type="mail" name="mail" required />
+          </label>
+          <label>
+            Pseudo
+            <input type="pseudo" name="pseudo" required />
+          </label>
+          <label>
+            Mot de passe
+            <input type="mot de passe" name="mot de passe" required />
+          </label>
+          <label>
+            Confirmation du passe
+            <input type="comfi du mot passe" name="comfi passe" required />
+          </label>
+          <button className="envoyé le formulaire" type="submit">
+            Envoyé le formulaire
+          </button>
         </form>
       </main>
     </div>

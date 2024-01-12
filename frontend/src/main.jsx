@@ -24,10 +24,6 @@ const router = createBrowserRouter([
   {
     path: "/ InscriptOrigins",
     element: <InscriptOrigins />,
-    loader: async () => {
-      return connexion.get(`/videos`).then((res) => res.data);
-      // ne pas oublier de mettre connexion pot a la place de get//
-    },
   },
 
   {
