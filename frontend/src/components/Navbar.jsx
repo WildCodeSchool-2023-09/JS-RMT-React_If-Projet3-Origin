@@ -20,7 +20,7 @@ function Navbar() {
           </li>
 
           <li>
-            <Link onClick={handleIconClick} className="nav" to="/videos">
+            <Link onClick={handleIconClick} className="nav" to="/video">
               Video
             </Link>
           </li>
@@ -34,6 +34,16 @@ function Navbar() {
           <li>
             <Link onClick={handleIconClick} className="nav" to="/connexion">
               Se connecter
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={handleIconClick}
+              className="nav"
+              to="/Administration"
+            >
+              Administrateur
             </Link>
           </li>
         </ul>

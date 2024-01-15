@@ -1,0 +1,28 @@
+@media only sreen and (max-width: 600px) {
+  .imagevideo {
+    height: 95vh;
+    width: 15%;
+    background-image: url(../../assets/dossimg.png/Origins.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    color: blanchedalmond;
+  }
+
+  .pagevideo {
+    display: flex;
+    padding: 0.2rem;
+  }
+
+  .pageadm {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 5%;
+    margin: 0.5rem;
+    border: 3px solid rgb(248, 107, 0);
+  }
+
+  .admincontainer {
+    display: flex;
+  }
+}

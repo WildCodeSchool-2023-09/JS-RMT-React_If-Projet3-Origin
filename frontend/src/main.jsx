@@ -4,13 +4,17 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import connexion from "./services/connexion";
+import Administration from "./components/administration/Administration";
+import AdminVideo from "./components/administration/AdminVideo";
+import PageVideo from "./pages/admin/PageVideo";
+import AdminContact from "./components/administration/AdminContact";
+
+import DashBoard from "./pages/admin/DashBoard";
 
 import App from "./App";
-import VideoUnit from "./components/VideoUnit";
-import Administration from "./pages/admin/Administration";
-import AdminVideo from "./pages/admin/AdminVideo";
-import DashBoard from "./pages/admin/DashBoard";
 import InscriptOrigins from "./pages/admin/InscriptOrigins";
+import Navbar from "./components/Navbar";
+import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
 const router = createBrowserRouter([
   {
@@ -28,17 +32,33 @@ const router = createBrowserRouter([
 
   {
     path: "/videos/:id",
-    element: <VideoUnit />,
+    element: <PageVideo />,
     loader: async ({ params }) => {
       return connexion.get(`/videos/${params.id}`).then((res) => res.data);
     },
   },
   {
-    path: "/connexion",
+    path: "/register",
     element: <InscriptOrigins />,
   },
   {
-    path: "/administration/",
+    path: "/Home",
+    element: <VideoAcceuil />,
+  },
+  {
+    path: "/Video",
+    element: <PageVideo />,
+  },
+  {
+    path: "/Contact",
+    element: <AdminContact />,
+  },
+  {
+    path: "/Connexion",
+    element: <Navbar />,
+  },
+  {
+    path: "/Administration/",
     element: <Administration />,
     children: [
       {

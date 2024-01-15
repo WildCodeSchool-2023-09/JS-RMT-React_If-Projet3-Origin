@@ -18,8 +18,8 @@ class VideoManager extends AbstractManager {
         video.description,
         video.year,
         video.url,
-        video.category_id,
-        video.sport_id,
+        video.category,
+        video.sport,
       ]
     );
 

@@ -1,0 +1,24 @@
+body {
+  background-image: url("../../assets/dossimg.png/Origins.png");
+  border-image-repeat: repeat;
+}
+.formContact {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  padding-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 10%;
+  color: white;
+}
+
+input {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 30px;
+}
+label {
+  padding: 5px;
+  margin-left: 555px;
+}

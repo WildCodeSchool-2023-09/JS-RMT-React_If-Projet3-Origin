@@ -1,0 +1,8 @@
+.page_acceuil {
+  height: 95vh;
+  width: 100%;
+  background-image: url(../../assets/dossimg.png/Origins.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  color: white;
+}
