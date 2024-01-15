@@ -10,11 +10,11 @@ function InscriptOrigins() {
         <form>
           <label>
             Nom
-            <input type="text" name="text" required />
+            <input type="text" name="lastname" required />
           </label>
           <label>
             Prénom
-            <input type="text" name="text" required />
+            <input type="text" name="firstname" required />
           </label>
           <label>
             Mail
@@ -22,17 +22,17 @@ function InscriptOrigins() {
           </label>
           <label>
             Pseudo
-            <input type="pseudo" name="pseudo" required />
+            <input type="text" name="pseudo" required />
           </label>
           <label>
             Mot de passe
-            <input type="mot de passe" name="mot de passe" required />
+            <input type="password" name="password" required />
           </label>
           <label>
             Confirmation du passe
-            <input type="comfi du mot passe" name="comfi passe" required />
+            <input type="password" name="comfirmedPassword" required />
           </label>
-          <button className="Incription" type="submit">
+          <button className="Inscription" type="submit">
             Inscription
           </button>
         </form>

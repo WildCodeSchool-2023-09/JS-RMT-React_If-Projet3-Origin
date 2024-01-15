@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/ InscriptOrigins",
+    path: "/inscription",
     element: <InscriptOrigins />,
   },
 
