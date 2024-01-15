@@ -5,7 +5,7 @@ import "./InscriptOrigins.css";
 function InscriptOrigins() {
   return (
     <div>
-      <h1> InscriptOrigins </h1>
+      <h1>InscriptOrigins</h1>
       <main>
         <form>
           <label>
@@ -13,7 +13,7 @@ function InscriptOrigins() {
             <input type="text" name="text" required />
           </label>
           <label>
-            prénom
+            Prénom
             <input type="text" name="text" required />
           </label>
           <label>
@@ -33,7 +33,7 @@ function InscriptOrigins() {
             <input type="comfi du mot passe" name="comfi passe" required />
           </label>
           <button className="Incription" type="submit">
-            Inscrption
+            Inscription
           </button>
         </form>
       </main>
