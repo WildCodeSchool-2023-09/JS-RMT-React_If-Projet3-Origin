@@ -32,8 +32,8 @@ function InscriptOrigins() {
             Confirmation du passe
             <input type="comfi du mot passe" name="comfi passe" required />
           </label>
-          <button className="envoyé le formulaire" type="submit">
-            Envoyé le formulaire
+          <button className="Incription" type="submit">
+            Inscrption
           </button>
         </form>
       </main>
