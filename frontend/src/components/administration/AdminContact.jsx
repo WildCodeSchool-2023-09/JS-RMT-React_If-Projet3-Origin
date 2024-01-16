@@ -4,31 +4,31 @@ import "./AdminContact.css";
 
 function AdminContact() {
   return (
-    <div className="corp">
+    <div className="demarquation">
       <main className="containercontact">
-        <form className="formContact">
-          <label>
+        <form>
+          <label className="lab">
             Nom
             <input type="text" name="text" required />
           </label>
-          <label>
+          <label className="lab">
             prénom
             <input type="text" name="text" required />
           </label>
-          <label>
+          <label className="lab">
             @mail
             <input type="phone" name="phone" required />
           </label>
-          <label>
+          <label className="lab">
             Sujet
             <input type="text" name="textarea" required />
           </label>
-          <label>
+          <label className="lab">
             message
             <input type="text" name="textarea" required />
           </label>
-          <button className="clickbutton" type="submit">
-            Envoyé le formulaire
+          <button className="lab" type="submit">
+            <t className="Env">Envoyé le formulaire</t>
           </button>
         </form>
       </main>
