@@ -12,6 +12,7 @@ import AdminContact from "./components/administration/AdminContact";
 import DashBoard from "./pages/admin/DashBoard";
 
 import App from "./App";
+import InscriptOrigins from "./pages/admin/InscriptOrigins";
 import Navbar from "./components/Navbar";
 import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
       return connexion.get(`/videos`).then((res) => res.data);
     },
   },
+
+  {
+    path: "/inscription",
+    element: <InscriptOrigins />,
+  },
+
   {
     path: "/videos/:id",
     element: <PageVideo />,

@@ -5,7 +5,7 @@ function Administration() {
   return (
     <div>
       <nav className="menu">
-        <Link to="/">Acceuil</Link>
+        <Link to="/">Home</Link>
         <Link to="/administration/">DashBoard</Link>
         <Link to="/administration/video">video</Link>
       </nav>
