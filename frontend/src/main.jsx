@@ -38,10 +38,6 @@ const router = createBrowserRouter([
     },
   },
   {
-    path: "/register",
-    element: <InscriptOrigins />,
-  },
-  {
     path: "/Home",
     element: <VideoAcceuil />,
   },
