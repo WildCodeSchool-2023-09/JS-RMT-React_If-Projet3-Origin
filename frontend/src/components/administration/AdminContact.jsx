@@ -17,7 +17,7 @@ function AdminContact() {
           </label>
           <label className="lab">
             @mail
-            <input type="phone" name="phone" required />
+            <input type="email" name="email" required />
           </label>
           <label className="lab">
             Sujet
