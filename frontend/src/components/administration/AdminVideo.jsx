@@ -57,9 +57,9 @@ function AdminVideo() {
     }
   };
   return (
-    <div className="imagevideo">
+    <div>
       <h1>Interface d'administration d'un dépôt pour une Video</h1>
-      <main className="imagevideo">
+      <main className="formulairevideo">
         <form onSubmit={postVideo}>
           <label className="pageadm">
             title
