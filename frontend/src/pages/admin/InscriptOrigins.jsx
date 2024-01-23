@@ -5,9 +5,9 @@ import "./InscriptOrigins.css";
 function InscriptOrigins() {
   return (
     <div>
-      <h1>InscriptOrigins</h1>
+      <h1>Inscription</h1>
       <main>
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <label>
             Nom
             <input type="text" name="lastname" required />
@@ -29,7 +29,7 @@ function InscriptOrigins() {
             <input type="password" name="password" required />
           </label>
           <label>
-            Confirmation du passe
+            Confirmation du mot de passe
             <input type="password" name="comfirmedPassword" required />
           </label>
           <button className="Inscription" type="submit">
