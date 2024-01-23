@@ -16,8 +16,8 @@ function AdminContact() {
             <input type="text" name="text" required />
           </label>
           <label>
-            téléphone
-            <input type="phone" name="phone" required />
+            email
+            <input type="email" name="text" required />
           </label>
           <label>
             Sujet
