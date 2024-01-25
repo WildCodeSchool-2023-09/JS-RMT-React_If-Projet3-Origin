@@ -1,19 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.nom {
+  border-radius: 50px;
+  padding-top: 5px;
+  margin: 1%;
+  margin-left: 0px;
+  background-color: rgb(248, 107, 0);
+}
 label {
-  padding-left: 550px;
-  padding-top: 5px;
-  margin: 5px;
+  margin-left: 85px;
 }
-
-input {
-  padding-top: 5px;
-  padding-left: 5px;
-}
-
 .button {
   transition-duration: 0.4s;
 }
 
 button:hover {
   background-color: rgb(248, 107, 0);
-  color: white;
+}
+div h1 {
+  margin-left: -100px;
+}
+div button {
+  margin-left: -0px;
+  border-radius: 10px;
+  padding: 5px;
+  padding: 15px;
+}
+
+div .inscript {
+  background-image: url(../../assets/dossimg.png/Origins.png);
+  background-size: 1500px;
+  width: 1400px;
+  height: 600px;
+  border: 0px solid;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
+  padding: 25px;
+  color: rgb(250, 247, 243);
+}
+div section {
+  width: 350px;
+  border: 1px solid black;
+  padding: 12px;
+  margin: 50px;
+  margin-left: 450px;
+  background-color: rgb(28, 42, 57);
 }

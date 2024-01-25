@@ -4,39 +4,52 @@ import "./InscriptOrigins.css";
 
 function InscriptOrigins() {
   return (
-    <div>
+    <div className="inscript">
       <h1>InscriptOrigins</h1>
-      <main>
-        <form>
-          <label>
-            Nom
-            <input type="text" name="lastname" required />
-          </label>
-          <label>
-            Prénom
-            <input type="text" name="firstname" required />
-          </label>
-          <label>
-            Mail
-            <input type="mail" name="mail" required />
-          </label>
-          <label>
-            Pseudo
-            <input type="text" name="pseudo" required />
-          </label>
-          <label>
-            Mot de passe
-            <input type="password" name="password" required />
-          </label>
-          <label>
-            Confirmation du passe
-            <input type="password" name="comfirmedPassword" required />
-          </label>
-          <button className="Inscription" type="submit">
-            Inscription
-          </button>
-        </form>
-      </main>
+      <section>
+        <main>
+          <form>
+            <label className="lastname" type="text" name="text">
+              Nom
+              <input className="nom" type="text" name="text" required />
+            </label>
+            <label className="lastname" type="text" name="text">
+              Prénom
+              <input className="nom" type="text" name="text" required />
+            </label>
+            <label className="lastname" type="text" name="text">
+              Mail
+              <input className="nom" type="mail" name="mail" required />
+            </label>
+            <label className="lastname" type="text" name="text">
+              Pseudo
+              <input className="nom" type="text" name="text" required />
+            </label>
+            <label className="lastname" type="text" name="text" required>
+              Mot de passe
+              <input className="nom" type="password" name="password" required />
+            </label>
+            <label
+              className="lastname"
+              type="password"
+              name="password"
+              required
+            >
+              Confirmation du passe
+              <input
+                className="nom"
+                type="password"
+                name="comfirmedPassword"
+                required
+              />
+            </label>
+
+            <button className="Inscription" type="submit">
+              Inscription
+            </button>
+          </form>
+        </main>
+      </section>
     </div>
   );
 }
