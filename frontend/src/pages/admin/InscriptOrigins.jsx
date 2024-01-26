@@ -9,35 +9,65 @@ function InscriptOrigins() {
       <section>
         <main>
           <form>
-            <label className="lastname" type="text" name="text">
+            <label className="labelInscription" type="text" name="text">
               Nom
-              <input className="nom" type="text" name="text" required />
+              <input
+                className="inputInscription"
+                type="text"
+                name="text"
+                required
+              />
             </label>
-            <label className="lastname" type="text" name="text">
+            <label className="labelInscription" type="text" name="text">
               Prénom
-              <input className="nom" type="text" name="text" required />
+              <input
+                className="inputInscription"
+                type="text"
+                name="text"
+                required
+              />
             </label>
-            <label className="lastname" type="text" name="text">
+            <label className="labelInscription" type="text" name="text">
               Mail
-              <input className="nom" type="mail" name="mail" required />
+              <input
+                className="inputInscription"
+                type="mail"
+                name="mail"
+                required
+              />
             </label>
-            <label className="lastname" type="text" name="text">
+            <label className="labelInscription" type="text" name="text">
               Pseudo
-              <input className="nom" type="text" name="text" required />
-            </label>
-            <label className="lastname" type="text" name="text" required>
-              Mot de passe
-              <input className="nom" type="password" name="password" required />
+              <input
+                className="inputInscription"
+                type="text"
+                name="text"
+                required
+              />
             </label>
             <label
-              className="lastname"
+              className="labelInscription"
+              type="text"
+              name="text"
+              required
+            >
+              Mot de passe
+              <input
+                className="inputInscription"
+                type="password"
+                name="password"
+                required
+              />
+            </label>
+            <label
+              className="labelInscription"
               type="password"
               name="password"
               required
             >
               Confirmation du passe
               <input
-                className="nom"
+                className="inputInscription"
                 type="password"
                 name="comfirmedPassword"
                 required
