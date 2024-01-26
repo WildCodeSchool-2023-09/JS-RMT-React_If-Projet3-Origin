@@ -24,12 +24,6 @@ const router = createBrowserRouter([
       return connexion.get(`/videos`).then((res) => res.data);
     },
   },
-
-  {
-    path: "/inscription",
-    element: <InscriptOrigins />,
-  },
-
   {
     path: "/videos/:id",
     element: <PageVideo />,
@@ -52,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/Connexion",
     element: <Navbar />,
+  },
+  {
+    path: "/inscription",
+    element: <InscriptOrigins />,
   },
   {
     path: "/Administration/",
