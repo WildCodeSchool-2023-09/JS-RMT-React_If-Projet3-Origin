@@ -8,7 +8,7 @@ function InscriptOrigins() {
       <h1>InscriptOrigins</h1>
       <section>
         <main>
-          <form>
+        <form onSubmit={(e) => e.preventDefault()}>
             <label className="lastname" type="text" name="text">
               Nom
               <input className="nom" type="text" name="text" required />
