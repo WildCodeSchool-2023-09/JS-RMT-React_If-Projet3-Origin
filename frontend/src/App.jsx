@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import PageVideo from "./pages/admin/VideoAcceuil";
 
-import "./App.css";
 import Navbar from "./components/Navbar";
 
 function App() {

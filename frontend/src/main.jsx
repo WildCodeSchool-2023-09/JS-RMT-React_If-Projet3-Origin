@@ -1,19 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import connexion from "./services/connexion";
 import Administration from "./components/administration/Administration";
 import AdminVideo from "./components/administration/AdminVideo";
 import PageVideo from "./pages/admin/PageVideo";
 import AdminContact from "./components/administration/AdminContact";
-
-import DashBoard from "./pages/admin/DashBoard";
+import Signform from "./components/Signform";
 
 import App from "./App";
 import Navbar from "./components/Navbar";
-import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
 const router = createBrowserRouter([
   {
@@ -24,36 +20,28 @@ const router = createBrowserRouter([
     },
   },
   {
-    path: "/videos/:id",
+    path: "/Home",
+    element: <Navbar />,
+  },
+  {
+    path: "/video/:id",
     element: <PageVideo />,
     loader: async ({ params }) => {
       return connexion.get(`/videos/${params.id}`).then((res) => res.data);
     },
   },
   {
-    path: "/Home",
-    element: <VideoAcceuil />,
-  },
-  {
-    path: "/Video",
-    element: <PageVideo />,
-  },
-  {
-    path: "/Contact",
+    path: "/contact",
     element: <AdminContact />,
   },
   {
     path: "/Connexion",
-    element: <Navbar />,
+    element: <Signform />,
   },
   {
     path: "/Administration/",
     element: <Administration />,
     children: [
-      {
-        path: "",
-        element: <DashBoard />,
-      },
       {
         path: "video",
         element: <AdminVideo />,

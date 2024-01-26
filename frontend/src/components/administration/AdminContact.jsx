@@ -6,29 +6,29 @@ function AdminContact() {
   return (
     <div className="demarquation">
       <main className="containercontact">
-        <form>
+        <form className="adm-form">
           <label className="lab">
             Nom
-            <input type="text" name="text" required />
+            <input className="adm-in" type="text" name="text" required />
           </label>
           <label className="lab">
             prénom
-            <input type="text" name="text" required />
+            <input className="adm-in" type="text" name="text" required />
           </label>
           <label className="lab">
             @mail
-            <input type="email" name="email" required />
+            <input className="adm-in" type="email" name="email" required />
           </label>
           <label className="lab">
             Sujet
-            <input type="text" name="textarea" required />
+            <input className="adm-in" type="text" name="textarea" required />
           </label>
           <label className="lab">
             message
-            <input type="text" name="textarea" required />
+            <input className="adm-in" type="text" name="textarea" required />
           </label>
           <button className="lab" type="submit">
-            <t className="Env">Envoyé le formulaire</t>
+            <t className="adm-in">Envoyé le formulaire</t>
           </button>
         </form>
       </main>

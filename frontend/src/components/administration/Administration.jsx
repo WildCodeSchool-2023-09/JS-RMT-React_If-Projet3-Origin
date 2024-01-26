@@ -4,10 +4,17 @@ import { Outlet, Link } from "react-router-dom";
 function Administration() {
   return (
     <div>
-      <nav className="menu">
-        <Link to="/">Acceuil</Link>
-        <Link to="/administration/">DashBoard</Link>
-        <Link to="/administration/video">video</Link>
+      <nav className="menu-link">
+        <p className="p-link">
+          <Link className="adm-link" to="/">
+            Acceuil
+          </Link>
+        </p>
+        <p className="p-link">
+          <Link className="adm-link" to="/administration/video">
+            video
+          </Link>
+        </p>
       </nav>
       <Outlet />
     </div>

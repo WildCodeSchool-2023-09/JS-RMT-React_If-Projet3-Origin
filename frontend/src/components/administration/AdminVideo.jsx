@@ -57,7 +57,7 @@ function AdminVideo() {
     }
   };
   return (
-    <div>
+    <div className="admin-div">
       <h1>Interface d'administration d'un dépôt pour une Video</h1>
       <main className="formulairevideo">
         <form onSubmit={postVideo}>
@@ -72,7 +72,7 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="pageadm">
             description
             <input
               className="imputadm"
@@ -83,7 +83,7 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="pageadm">
             year
             <input
               className="imputadm"
@@ -94,7 +94,7 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="pageadm">
             url
             <input
               className="imputadm"
@@ -105,7 +105,7 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="pageadm">
             category
             <select
               className="imputadm"
@@ -121,7 +121,7 @@ function AdminVideo() {
               ))}
             </select>
           </label>
-          <label>
+          <label className="pageadm">
             sport
             <select
               className="imputadm"
