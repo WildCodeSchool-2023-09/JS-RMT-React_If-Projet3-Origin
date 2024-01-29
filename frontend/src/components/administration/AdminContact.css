@@ -1,35 +1,43 @@
 @media only sreen and (max-width: 600px) {
 }
-body {
-  background-image: url("../../assets/dossimg.png/Origins.png");
-  border-image-repeat: repeat;
-  padding: 8%;
-  justify-content: center;
-}
 
-input {
+.adm-in {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30px;
+  height: 40px;
   border-color: rgb(248, 107, 0);
-  border-radius: 30px;
-  margin-bottom: 8px;
+  border-radius: 3%;
+  margin-bottom: 10px;
   margin-top: 8px;
 }
 
 .lab {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  margin-top: 10px;
+  margin-left: 135px;
+  margin-right: 9px;
+  color: rgb(248, 107, 0);
+  border-color: rgb(248, 107, 0);
 }
 
-.containercontact {
-  margin-left: 20rem;
-  margin-right: 20rem;
-  margin-bottom: 50vw;
+.adm-form {
+  border-left: 20px;
+  border-right: 20px;
+  border-bottom: 5px;
   background-color: rgba(45, 9, 129, 0.902);
-  border-color: rgb(248, 107, 0);
-  border-radius: 8%;
+  border-color: #f86b00;
+  border-radius: 3%;
+  margin-top: 10px;
+  margin-left: 20vw;
+  margin-right: 30vw;
+}
+
+.adm-in {
+  display: flex;
+}
+
+.adm-form {
 }

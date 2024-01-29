@@ -57,14 +57,16 @@ function AdminVideo() {
     }
   };
   return (
-    <div>
-      <h1>Interface d'administration d'un dépôt pour une Video</h1>
-      <main className="formulairevideo">
+    <div className="admin-div">
+      <h1 className="admin-h1">
+        Interface d'administration d'un dépôt pour une Video
+      </h1>
+      <main className="admin-main">
         <form onSubmit={postVideo}>
-          <label className="pageadm">
+          <label className="admin-label">
             title
             <input
-              className="imputadm"
+              className="inputadm"
               type="text"
               name="title"
               required
@@ -72,10 +74,10 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="admin-label">
             description
             <input
-              className="imputadm"
+              className="inputadm"
               type="texterea"
               name="description"
               required
@@ -83,10 +85,10 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="admin-label">
             year
             <input
-              className="imputadm"
+              className="inputadm"
               type="number"
               name="year"
               required
@@ -94,10 +96,10 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="admin-label">
             url
             <input
-              className="imputadm"
+              className="inputadm"
               type="url"
               name="url"
               required
@@ -105,10 +107,10 @@ function AdminVideo() {
               onChange={handleVideo}
             />
           </label>
-          <label>
+          <label className="admin-label">
             category
             <select
-              className="imputadm"
+              className="admin-select inputadm"
               name="category"
               onChange={handleVideo}
               required
@@ -121,10 +123,10 @@ function AdminVideo() {
               ))}
             </select>
           </label>
-          <label>
+          <label className="admin-label">
             sport
             <select
-              className="imputadm"
+              className="admin-select inputadm"
               name="sport"
               onChange={handleVideo}
               required
@@ -137,36 +139,13 @@ function AdminVideo() {
               ))}
             </select>
           </label>
-          <button className="ajoutvideo" type="submit">
+          <button className="admin-boutton" type="submit">
             Ajouter
           </button>
-          {message && <p className="message">{message}</p>}
+          {message && <p className="admin-message">{message}</p>}
         </form>
-        <section className="admincontainer">
+        <section>
           <h2>Liste des videos dans la base vidéo</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>id bonjour alain</th>
-                <th>title</th>
-                <th>url</th>
-              </tr>
-            </thead>
-            {/* <tbody>
-              {video.map((vid) => {
-                return (
-                  <tr>
-                    <td>{vid.id}</td>
-                    <td>{vid.title}</td>
-                    <td>{vid.url}</td>
-                    <td>
-                      <img src={vid.image_url} alt={`video ${vid.title}`} />
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody> */}
-          </table>
         </section>
       </main>
     </div>

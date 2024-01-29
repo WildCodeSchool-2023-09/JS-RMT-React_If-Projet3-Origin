@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function PageVideo({ video }) {
+function CardVideo({ video }) {
   return (
     <article className="containt">
       {" "}
       <h1> {video.title}</h1>
       <h1>{video.year}</h1>
-      <h1>{video.url}'</h1>
+      <a href={video.url}>Lien vers video</a>
     </article>
   );
 }
 
-PageVideo.propTypes = {
+CardVideo.propTypes = {
   video: PropTypes.shape({
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
@@ -20,4 +20,4 @@ PageVideo.propTypes = {
   }).isRequired,
 };
 
-export default PageVideo;
+export default CardVideo;
