@@ -1,11 +1,5 @@
 @media only sreen and (max-width: 600px) {
 }
-body {
-  background-image: url("../../assets/dossimg.png/Origins.png");
-  border-image-repeat: repeat;
-  padding: 8%;
-  justify-content: center;
-}
 
 .adm-in {
   display: flex;

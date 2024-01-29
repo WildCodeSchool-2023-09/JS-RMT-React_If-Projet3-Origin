@@ -1,0 +1,40 @@
+.admin-main {
+  padding: 8vw 35vw 2vw 35vw;
+}
+
+.admin-label {
+  padding-bottom: 10%;
+}
+
+.admin-main {
+  align-content: center;
+
+  text-align: center;
+  /* min-height: 80%; */
+
+  /* align-items: center; */
+  width: 30%;
+}
+
+.adm-link {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.menu-link {
+  padding-top: 4vw;
+  padding-left: 40%;
+  padding-right: 40%;
+  text-align: center;
+}
+
+.admin-h1 {
+  color: white;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+body {
+  background-color: rgb(174, 174, 222);
+}

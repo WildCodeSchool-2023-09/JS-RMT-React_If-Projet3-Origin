@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import connexion from "./services/connexion";
 import Administration from "./components/administration/Administration";
 import AdminVideo from "./components/administration/AdminVideo";
-import PageVideo from "./pages/admin/PageVideo";
 import AdminContact from "./components/administration/AdminContact";
 import Signform from "./components/Signform";
+import PageVideo from "./pages/PageVideo";
 
 import App from "./App";
 import Navbar from "./components/Navbar";
@@ -15,21 +15,18 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    loader: async () => {
-      return connexion.get(`/videos`).then((res) => res.data);
-    },
   },
   {
     path: "/Home",
     element: <Navbar />,
   },
-  {
-    path: "/video/:id",
-    element: <PageVideo />,
-    loader: async ({ params }) => {
-      return connexion.get(`/videos/${params.id}`).then((res) => res.data);
-    },
-  },
+  // {
+  //   path: "/video/:id",
+  //   element: <PageVideo />,
+  //   loader: async ({ params }) => {
+  //     return connexion.get(`/videos/${params.id}`).then((res) => res.data);
+  //   },
+  // },
   {
     path: "/contact",
     element: <AdminContact />,
@@ -45,6 +42,13 @@ const router = createBrowserRouter([
       {
         path: "video",
         element: <AdminVideo />,
+      },
+      {
+        path: "consultation",
+        element: <PageVideo />,
+        loader: async () => {
+          return connexion.get(`/videos`).then((res) => res.data);
+        },
       },
     ],
   },
