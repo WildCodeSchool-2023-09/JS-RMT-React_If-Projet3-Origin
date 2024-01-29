@@ -9,17 +9,12 @@ import Signform from "./components/Signform";
 import PageVideo from "./pages/PageVideo";
 
 import App from "./App";
-import InscriptOrigins from "./pages/admin/InscriptOrigins";
 import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/inscription",
-    element: <InscriptOrigins />,
   },
   {
     path: "/Home",

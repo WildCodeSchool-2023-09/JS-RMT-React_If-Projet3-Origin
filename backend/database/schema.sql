@@ -46,3 +46,18 @@ INSERT INTO video(title, description, year, url, category_id, sport_id) VALUES("
 INSERT INTO video(title, description, year, url, category_id, sport_id) VALUES("Renault Nigel Mansell", "Track: Hungaroring - Car: Williams FW14 - Engine: Renault V10", 1991, "https://youtu.be/EzQxfBsBLs8?si=pvxeHSIzaeISKven", 1, 8);
 INSERT INTO video(title, description, year, url, category_id, sport_id) VALUES("E_sport", "The 1st French Championship will take place tomorrow at the Esterel Aréna in Saint Raphaël, everything is ready!. Thanks again to all our partners: The town of Saint-Raphaël, the Parisian Hado Passion arena as well as the We are sports arena in Lyon. Thanks also to our sponsors La SALLE Saint Raphael and HAWK FUEL.", 2019, "https://youtu.be/kTqWfzMVi3k?si=1kMmwjEc6viooMNg", 3,8);
 INSERT INTO video(title, description, year, url, category_id, sport_id) VALUES("E-sport", "Through the 19th edition of the Gamers Assembly, Poitiers is one of the 7 cities which will host competitions for the French League of Legends championship, the most popular video game in the world.", 2018, "https://youtu.be/JprnQe1nHGk?si=NdUhI2oTGqhT6IzZ", 3, 8);
+create table inscription (
+  id int unsigned primary key auto_increment not null,
+  nom, prenom, email, sujet, message TEXT NOT NULL
+);
+
+
+create table client (
+  id int unsigned primary key auto_increment not null,
+  nom VARCHAR(255) NOT NULL,
+  prenom VARCHAR(255) NOT NULL,
+  email TEXT NOT NULL,
+  sujet VARCHAR(255) NOT NULL,
+  message LONGTEXT NOT NULL
+);
+

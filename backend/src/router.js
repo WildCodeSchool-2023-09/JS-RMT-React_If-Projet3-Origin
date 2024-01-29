@@ -2,9 +2,14 @@ const express = require("express");
 
 const router = express.Router();
 
-/* ************************************************************************* */
-// Define Your API Routes Here
-/* ************************************************************************* */
+const clientControllers = require("./controllers/clientControllers");
+// const validateClient = require("./validators/validateClient");
+
+router.get("/clients", clientControllers.browse);
+router.get("/clients/:id", clientControllers.read);
+// router.post("/clients", validateClient, clientControllers.add);
+// router.put("/clients/:id", validateClient, clientControllers.edit);
+// router.delete("/clients/:id", clientControllers.destroy);
 
 // Import itemControllers module for handling item-related operations
 const itemControllers = require("./controllers/itemControllers");
@@ -28,13 +33,17 @@ router.get("/videos/:id", videoControllers.read);
 
 router.post("/videos", validateVideo, videoControllers.add);
 
-const SportsControllers = require("./controllers/sportsControlers");
+const SportsControllers = require("./controllers/sportsControllers");
 
 router.get("/sports", SportsControllers.browse);
 
-const CategoryControllers = require("./controllers/categoryControleurs");
+const CategoryControllers = require("./controllers/categoryControlleurs");
 
 router.get("/categorys", CategoryControllers.browse);
+
+const AdmincontactControllers = require("./controllers/admincontactControlleurs");
+
+router.post("/admincontact", AdmincontactControllers.send);
 
 /* ************************************************************************* */
 

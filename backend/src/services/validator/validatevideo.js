@@ -1,12 +1,12 @@
 const Joi = require("joi");
 
 const schema = Joi.object({
-  title: Joi.string().max(150).required(),
-  description: Joi.string().max(1500).required(),
+  title: Joi.string().min(4).max(150).required(),
+  description: Joi.string().min(4).max(1500).required(),
   year: Joi.string().min(4).max(4).required(),
-  url: Joi.string().max(250).required(),
-  category: Joi.string().max(100).required(),
-  sport: Joi.string().max(50).required(),
+  url: Joi.string().min(4).max(250).required(),
+  category: Joi.string().min(4).max(100).required(),
+  sport: Joi.string().min(4).max(50).required(),
 });
 
 const validateVideo = (req, res, next) => {

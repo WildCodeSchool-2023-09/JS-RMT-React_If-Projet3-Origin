@@ -8,7 +8,10 @@ const VideoManager = require("./models/VideoManager");
 const CategoryManager = require("./models/CategoryManager");
 const SportsManager = require("./models/SportsManager");
 
+const ClientManager = require("./models/ClientManager");
+
 const managers = [
+  ClientManager,
   ItemManager,
   VideoManager,
   CategoryManager,
