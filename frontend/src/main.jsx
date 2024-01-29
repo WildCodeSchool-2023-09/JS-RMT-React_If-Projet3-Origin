@@ -21,7 +21,6 @@ const router = createBrowserRouter([
     path: "/inscription",
     element: <InscriptOrigins />,
   },
-   },
   {
     path: "/Home",
     element: <Navbar />,
