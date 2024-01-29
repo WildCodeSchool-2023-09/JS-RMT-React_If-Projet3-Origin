@@ -1,28 +1,40 @@
-@media only sreen and (max-width: 600px) {
-  .imagevideo {
-    height: 95vh;
-    width: 15%;
-    background-image: url(../../assets/dossimg.png/Origins.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    color: blanchedalmond;
-  }
+.admin-main {
+  padding: 8vw 35vw 2vw 35vw;
+}
 
-  .pagevideo {
-    display: flex;
-    padding: 0.2rem;
-  }
+.admin-label {
+  padding-bottom: 10%;
+}
 
-  .pageadm {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-top: 5%;
-    margin: 0.5rem;
-    border: 3px solid rgb(248, 107, 0);
-  }
+.admin-main {
+  align-content: center;
 
-  .admincontainer {
-    display: flex;
-  }
+  text-align: center;
+  /* min-height: 80%; */
+
+  /* align-items: center; */
+  width: 30%;
+}
+
+.adm-link {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.menu-link {
+  padding-top: 4vw;
+  padding-left: 40%;
+  padding-right: 40%;
+  text-align: center;
+}
+
+.admin-h1 {
+  color: white;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+body {
+  background-color: rgb(174, 174, 222);
 }
