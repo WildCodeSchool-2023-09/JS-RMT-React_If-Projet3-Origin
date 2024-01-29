@@ -9,6 +9,7 @@ import Signform from "./components/Signform";
 import PageVideo from "./pages/PageVideo";
 
 import App from "./App";
+import InscriptOrigins from "./pages/admin/InscriptOrigins";
 import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
@@ -17,16 +18,14 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "/inscription",
+    element: <InscriptOrigins />,
+  },
+   },
+  {
     path: "/Home",
     element: <Navbar />,
   },
-  // {
-  //   path: "/video/:id",
-  //   element: <PageVideo />,
-  //   loader: async ({ params }) => {
-  //     return connexion.get(`/videos/${params.id}`).then((res) => res.data);
-  //   },
-  // },
   {
     path: "/contact",
     element: <AdminContact />,
