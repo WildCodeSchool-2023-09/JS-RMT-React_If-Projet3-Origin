@@ -1,0 +1,17 @@
+.signform {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 10vh;
+  margin: 5% 50% 30% 30%;
+}
+
+.sign-connexion {
+  text-align: center;
+}
+
+.sign-input {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}

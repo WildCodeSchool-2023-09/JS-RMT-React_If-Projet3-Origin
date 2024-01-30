@@ -5,8 +5,8 @@ const router = express.Router();
 const clientControllers = require("./controllers/clientControllers");
 // const validateClient = require("./validators/validateClient");
 
-router.get("/clients", clientControllers.browse);
-router.get("/clients/:id", clientControllers.read);
+router.post("/login", clientControllers.login);
+
 // router.post("/clients", validateClient, clientControllers.add);
 // router.put("/clients/:id", validateClient, clientControllers.edit);
 // router.delete("/clients/:id", clientControllers.destroy);

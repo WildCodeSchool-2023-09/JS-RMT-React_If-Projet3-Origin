@@ -15,6 +15,18 @@ const browse = async (req, res, next) => {
   }
 };
 
+const login = async (req, res, next) => {
+  try {
+    // Fetch all clients from the database
+    const clients = await tables.client.readAll();
+    // Respond with the clients in JSON format
+    res.status(200).json(clients);
+  } catch (err) {
+    // Pass any errors to the error-handling middleware
+    next(err);
+  }
+};
+
 // The R of BREAD - Read operation
 const read = async (req, res, next) => {
   try {
@@ -87,6 +99,7 @@ const destroy = async (req, res, next) => {
 
 // Ready to export the controller functions
 module.exports = {
+  login,
   browse,
   read,
   edit,
