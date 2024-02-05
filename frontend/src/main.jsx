@@ -9,7 +9,7 @@ import Signform from "./components/Signform";
 import PageVideo from "./pages/PageVideo";
 
 import App from "./App";
-import InscriptOrigins from "./pages/admin/InscriptOrigins";
+import Inscription from "./pages/admin/InscriptOrigins";
 import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/inscription",
-    element: <InscriptOrigins />,
+    element: <Inscription />,
   },
   {
-    path: "/Home",
+    path: "/navbar",
     element: <Navbar />,
   },
   {

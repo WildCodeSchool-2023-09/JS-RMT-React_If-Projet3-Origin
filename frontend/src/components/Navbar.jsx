@@ -37,6 +37,11 @@ function Navbar() {
               Connexion
             </Link>
           </li>
+          <li>
+            <Link onClick={handleIconClick} className="nav" to="/inscription">
+              Inscription
+            </Link>
+          </li>
 
           <li>
             <Link
