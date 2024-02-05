@@ -27,7 +27,7 @@ function AdminContact() {
             message
             <input className="adm-in" type="text" name="textarea" required />
           </label>
-          <button className="lab" type="submit">
+          <button className="labt" type="submit">
             <t className="adm-in">Envoyé le formulaire</t>
           </button>
         </form>
