@@ -4,6 +4,8 @@
 
 .admin-label {
   padding-bottom: 10%;
+  color: rgb(7, 134, 246);
+  text-align: right;
 }
 
 .admin-main {
@@ -13,7 +15,7 @@
 }
 
 .adm-link {
-  color: white;
+  color: rgb(254, 251, 251);
   font-size: larger;
   text-decoration: none;
 }
@@ -26,7 +28,7 @@
 }
 
 .admin-h1 {
-  color: white;
+  color: rgb(249, 246, 246);
   text-align: center;
   margin-top: 3vw;
 }
