@@ -1,27 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import "./Signform.css";
 
 function Signform({ type }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setEmail("");
+    setPassword("");
+  };
+
   return (
-    <form className="signform" onSubmit="">
-      <h2>{type === "signup" ? "inscription" : "Connexion"}</h2>
-      <label htmlFor="">
+    <form className="signformform" onSubmit={handleSubmit}>
+      <h2 className="signtext">
+        {type === "signup" ? "Inscription" : "Connexion"}
+      </h2>
+      <label className="signtext" htmlFor="email">
         Email
-        <input type="email" required />
+        <input
+          className="signtext"
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
       </label>
-      <label htmlFor="">
+      <label className="signtext" htmlFor="password">
         Password
-        <input type="password" name="password" required />
+        <input
+          className="signtext"
+          type="password"
+          id="password"
+          name="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
       </label>
-      {type === "signup" && (
-        <label htmlFor="">
-          Password
-          <input type="password" name="confirmPassword" required />
-        </label>
-      )}
-      <button type="submit">
+      <button className="signsubmit" type="submit">
         {type === "signup" ? "Inscription" : "Se connecter"}
       </button>
     </form>
