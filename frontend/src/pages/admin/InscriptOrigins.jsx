@@ -29,7 +29,7 @@ function InscriptOrigins() {
             <input type="password" name="password" required />
           </label>
           <label>
-            Confirmation du mail
+            Confirmation du mot de passe
             <input type="password" name="comfirmedPassword" required />
           </label>
           <button className="Inscription" type="submit">
