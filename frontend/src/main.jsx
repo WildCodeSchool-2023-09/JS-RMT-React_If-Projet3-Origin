@@ -7,6 +7,7 @@ import AdminVideo from "./components/administration/AdminVideo";
 import AdminContact from "./components/administration/AdminContact";
 import Signform from "./components/Signform";
 import PageVideo from "./pages/PageVideo";
+import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
 import App from "./App";
 import InscriptOrigins from "./pages/admin/InscriptOrigins";
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Navbar />,
+  },
+  {
+    path: "/Video",
+    element: <VideoAcceuil />,
   },
   {
     path: "/contact",
