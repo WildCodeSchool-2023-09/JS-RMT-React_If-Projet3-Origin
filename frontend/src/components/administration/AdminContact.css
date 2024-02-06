@@ -7,6 +7,7 @@
   margin-top: 60px;
   padding-bottom: 40px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 .lab {
@@ -22,6 +23,5 @@
 .labt {
   position: relative;
   left: 20px;
-  margin: 0px;
   width: 235px;
 }
