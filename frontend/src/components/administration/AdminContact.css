@@ -26,3 +26,9 @@
   width: 235px;
   color: rgb(248, 107, 0);
 }
+
+.validation {
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}

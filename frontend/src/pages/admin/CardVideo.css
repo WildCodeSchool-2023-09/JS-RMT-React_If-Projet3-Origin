@@ -1,0 +1,9 @@
+@media screen {
+  max-width: 600px;
+}
+
+.containtV {
+  display: flex;
+  margin-left: 40vw;
+  margin-right: 40vw;
+}

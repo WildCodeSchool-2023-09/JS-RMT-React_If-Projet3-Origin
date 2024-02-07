@@ -21,6 +21,13 @@ function AdminContact() {
 
   const handleUpload = async (e) => {
     e.preventDefault();
+    setFormData({
+      nom: "",
+      prenom: "",
+      email: "",
+      sujet: "",
+      message: "",
+    });
 
     try {
       const response = await connexion.post(

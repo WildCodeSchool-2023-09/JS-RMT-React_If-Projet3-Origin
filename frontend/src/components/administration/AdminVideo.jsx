@@ -61,8 +61,8 @@ function AdminVideo() {
       <h1 className="admin-h1">
         Interface d'administration d'un dépôt pour une Video
       </h1>
-      <main className="admin-main">
-        <form onSubmit={postVideo}>
+      <main>
+        <form className="admin-main" onSubmit={postVideo}>
           <label className="admin-label">
             title
             <input
@@ -110,7 +110,7 @@ function AdminVideo() {
           <label className="admin-label">
             category
             <select
-              className="admin-select inputadm"
+              className="admin-select-inputadm"
               name="category"
               onChange={handleVideo}
               required
@@ -126,7 +126,7 @@ function AdminVideo() {
           <label className="admin-label">
             sport
             <select
-              className="admin-select inputadm"
+              className="admin-select-inputadm"
               name="sport"
               onChange={handleVideo}
               required
@@ -140,13 +140,10 @@ function AdminVideo() {
             </select>
           </label>
           <button className="admin-boutton" type="submit">
-            Ajouter
+            Valider
           </button>
           {message && <p className="admin-message">{message}</p>}
         </form>
-        <section>
-          <h2>Liste des videos dans la base vidéo</h2>
-        </section>
       </main>
     </div>
   );
