@@ -1,39 +1,56 @@
-.admin-main {
-  padding: 3vw 35vw 2vw 30vw;
-}
+  .admin-div {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 250px;
+    background-color: #dd6d28;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
 
-.admin-label {
-  padding-bottom: 1%;
-}
+  .admin-h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .admin-label {
+    text-align: center;
+    color: white;
+  }
 
-.admin-main {
-  align-content: center;
-  text-align: center;
-  width: 30%;
-}
+  .admin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.adm-link {
-  color: white;
-  font-size: larger;
-  text-decoration: none;
-}
+  .inputadm {
+    padding: 10px;
+    padding-left: 400px;
+    margin-bottom: 5px;
+    border: 1px solid #050438;
+    border-radius: 3px;
+    text-align: center;
+  }
 
-.menu-link {
-  padding-top: 4vw;
-  padding-left: 40%;
-  padding-right: 40%;
-  text-align: center;
-}
+  .admin-select-inputadm {
+    width: 100%;
+    padding: 10px;
+    padding-left: 578px;
+    margin-bottom: 15px;
+    border: 1px solid #050438;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+  }
 
-.admin-h1 {
-  color: white;
-  text-align: center;
-}
+  .admin-button {
+    clear: none;
+  }
 
-.admin-boutton {
-  margin-right: 250px;
-}
-
-section h2 {
-  color: aliceblue;
-}
+  .adm-link {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
