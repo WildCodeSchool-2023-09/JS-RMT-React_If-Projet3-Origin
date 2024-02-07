@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import "./Navbar.css";
+
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
@@ -11,11 +13,10 @@ function Navbar() {
   return (
     <div>
       <nav className={isActive ? "active nav" : "nav"}>
-        <h3 className="title">origins</h3>
         <ul>
           <li>
             <Link onClick={handleIconClick} className="nav" to="/">
-              Home
+              Acceuil
             </Link>
           </li>
 
@@ -33,7 +34,13 @@ function Navbar() {
 
           <li>
             <Link onClick={handleIconClick} className="nav" to="/connexion">
-              Se connecter
+              Connexion
+            </Link>
+          </li>
+
+          <li>
+            <Link onClick={handleIconClick} className="nav" to="/inscription">
+              Inscription
             </Link>
           </li>
 
@@ -43,7 +50,7 @@ function Navbar() {
               className="nav"
               to="/Administration"
             >
-              Administrateur
+              Administration
             </Link>
           </li>
         </ul>

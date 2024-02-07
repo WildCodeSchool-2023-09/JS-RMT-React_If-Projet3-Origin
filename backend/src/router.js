@@ -36,6 +36,10 @@ const CategoryControllers = require("./controllers/categoryControleurs");
 
 router.get("/categorys", CategoryControllers.browse);
 
+const contactControllers = require("./controllers/contactControllers");
+
+router.post("/contacts", contactControllers.send);
+
 /* ************************************************************************* */
 
 module.exports = router;

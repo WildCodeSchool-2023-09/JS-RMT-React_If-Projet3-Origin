@@ -1,69 +1,57 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import connexion from "./services/connexion";
 import Administration from "./components/administration/Administration";
 import AdminVideo from "./components/administration/AdminVideo";
-import PageVideo from "./pages/admin/PageVideo";
 import AdminContact from "./components/administration/AdminContact";
-
-import DashBoard from "./pages/admin/DashBoard";
+import Signform from "./components/Signform";
+import PageVideo from "./pages/PageVideo";
+import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
 import App from "./App";
 import InscriptOrigins from "./pages/admin/InscriptOrigins";
 import Navbar from "./components/Navbar";
-import VideoAcceuil from "./pages/admin/VideoAcceuil";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    loader: async () => {
-      return connexion.get(`/videos`).then((res) => res.data);
-    },
   },
-
   {
     path: "/inscription",
     element: <InscriptOrigins />,
   },
-
-  {
-    path: "/videos/:id",
-    element: <PageVideo />,
-    loader: async ({ params }) => {
-      return connexion.get(`/videos/${params.id}`).then((res) => res.data);
-    },
-  },
   {
     path: "/Home",
-    element: <VideoAcceuil />,
+    element: <Navbar />,
   },
   {
     path: "/Video",
-    element: <PageVideo />,
+    element: <VideoAcceuil />,
   },
   {
-    path: "/Contact",
+    path: "/contact",
     element: <AdminContact />,
   },
   {
     path: "/Connexion",
-    element: <Navbar />,
+    element: <Signform />,
   },
   {
     path: "/Administration/",
     element: <Administration />,
     children: [
       {
-        path: "",
-        element: <DashBoard />,
-      },
-      {
         path: "video",
         element: <AdminVideo />,
+      },
+      {
+        path: "consultation",
+        element: <PageVideo />,
+        loader: async () => {
+          return connexion.get(`/videos`).then((res) => res.data);
+        },
       },
     ],
   },

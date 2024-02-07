@@ -1,35 +1,28 @@
-@media only sreen and (max-width: 600px) {
-}
-body {
-  background-image: url("../../assets/dossimg.png/Origins.png");
-  border-image-repeat: repeat;
-  padding: 8%;
-  justify-content: center;
-}
-
-input {
-  flex-direction: column;
-  align-items: center;
-  height: 30px;
-  border-color: rgb(248, 107, 0);
-  border-radius: 30px;
-  margin-bottom: 8px;
-  margin-top: 8px;
+.adm-form {
+  background-color: rgb(28, 42, 57);
+  border-radius: 3%;
+  width: 520px;
+  margin: auto;
+  border: 3px solid rgb(248, 107, 0);
+  margin-top: 60px;
+  padding-bottom: 50px;
+  padding-right: 110px;
 }
 
 .lab {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  position: relative;
+  right: 350px;
+  margin: 20px;
+  width: 235px;
+  color: rgb(248, 107, 0);
 }
 
-.containercontact {
-  margin-left: 20rem;
-  margin-right: 20rem;
-  margin-bottom: 50vw;
-  background-color: rgba(45, 9, 129, 0.902);
-  border-color: rgb(248, 107, 0);
-  border-radius: 8%;
+.labt {
+  position: relative;
+  left: 210px;
+  margin: 10px;
+  width: 235px;
+  color: rgb(248, 107, 0);
 }

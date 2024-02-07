@@ -1,13 +1,27 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
+import "./Administration.css";
+
 function Administration() {
   return (
     <div>
-      <nav className="menu">
-        <Link to="/">Home</Link>
-        <Link to="/administration/">DashBoard</Link>
-        <Link to="/administration/video">video</Link>
+      <nav className="menu-link">
+        <p className="p-link">
+          <Link className="adm-link" to="/">
+            Acceuil
+          </Link>
+        </p>
+        <p className="p-link">
+          <Link className="adm-link" to="/administration/video">
+            video
+          </Link>
+        </p>
+        <p className="p-link">
+          <Link className="adm-link" to="/administration/consultation">
+            consultation{" "}
+          </Link>
+        </p>
       </nav>
       <Outlet />
     </div>
