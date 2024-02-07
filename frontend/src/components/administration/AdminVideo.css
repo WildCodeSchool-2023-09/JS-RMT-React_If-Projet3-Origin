@@ -1,9 +1,9 @@
 .admin-main {
-  padding: 8vw 35vw 2vw 35vw;
+  padding: 3vw 35vw 2vw 30vw;
 }
 
 .admin-label {
-  padding-bottom: 10%;
+  padding-bottom: 1%;
 }
 
 .admin-main {
@@ -28,5 +28,12 @@
 .admin-h1 {
   color: white;
   text-align: center;
-  margin-top: 3vw;
+}
+
+.admin-boutton {
+  margin-right: 250px;
+}
+
+section h2 {
+  color: aliceblue;
 }

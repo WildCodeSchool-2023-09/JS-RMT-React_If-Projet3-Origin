@@ -1,28 +1,26 @@
 .adm-form {
   background-color: rgb(28, 42, 57);
   border-radius: 3%;
-  width: 520px;
+  width: 400px;
   margin: auto;
   border: 3px solid rgb(248, 107, 0);
   margin-top: 60px;
   padding-bottom: 50px;
-  padding-right: 110px;
+  padding-right: 10px;
 }
 
 .lab {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 350px;
+  right: -20px;
   margin: 20px;
   width: 235px;
-  color: rgb(248, 107, 0);
 }
 
 .labt {
   position: relative;
-  left: 210px;
+  left: 30px;
   margin: 10px;
   width: 235px;
-  color: rgb(248, 107, 0);
 }

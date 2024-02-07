@@ -1,12 +1,11 @@
 label {
-  padding-left: 550px;
-  padding-top: 5px;
-  margin: 5px;
-}
+  display: flex;
+  padding-right: 190px;
+  padding-top: 25px;
+  color: rgb(248, 107, 0);
+  flex-direction: column;
 
-input {
-  padding-top: 5px;
-  padding-left: 5px;
+  border-radius: 10px;
 }
 
 .button {
@@ -16,4 +15,23 @@ input {
 button:hover {
   background-color: rgb(248, 107, 0);
   color: white;
+}
+button {
+  margin-left: 1px;
+  margin-top: 15px;
+  width: 165px;
+  background-color: rgb(248, 107, 0);
+}
+
+form {
+  background-color: rgb(28, 42, 57);
+  width: 400px;
+  border-radius: 13px;
+  margin: auto;
+  padding: 1px;
+  padding: 5px;
+  border: 3px solid rgb(248, 107, 0);
+  padding-left: 110px;
+
+  padding-bottom: 50px;
 }
