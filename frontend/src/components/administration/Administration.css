@@ -1,4 +1,30 @@
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .admin-link {
   justify-content: space-between;
   align-content: center;
+}
+
+.car-title .card-year .card-url {
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.containt {
+  border-color: rgb(192, 190, 205);
+  border-style: double;
+  color: white;
+  background-size: 100%;
+  background-repeat: space;
+  background-position: center;
+  margin-left: 330px;
+  width: 33%;
+  height: 100%;
+  margin-top: 60px;
+  text-align: center;
 }
